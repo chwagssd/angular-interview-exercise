@@ -1,5 +1,7 @@
 # angular-interview-exercise
 
+## Expected time: 30-60 minutes
+
 ## Submitting your response
 Please clone this repo into your Github.com account, and then when you are done with the exercise, open a pull request with your changes back into this repo.
 
