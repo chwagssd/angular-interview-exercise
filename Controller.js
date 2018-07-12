@@ -20,7 +20,7 @@
             this.$scope = $scope;
 
             console.log("I'm attached as the controller to: " + $attrs.context);
-            //this.$scope.items = [{"firstName": "No Names yet! " + Math.random()}];
+            //$scope.items = [{"firstName": "No Names yet! " + Math.random()}];
         },
 
 

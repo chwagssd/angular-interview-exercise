@@ -23,13 +23,12 @@ The HTML is divided into 2 sections, each using the same controller definition:
 
 ```html
 <div class="app" ng-app="interviewExercise" ng-controller="genericController">
-    <div>
-        <h1>I am the main set of items</h1>
-    </div>
-
+    <h1>I am the main set of items</h1>
+    <ul>...</ul>
 
     <div ng-controller="genericController">
         <h2>I'm a 2nd instance of the controller</h2>
+        <ul>...</ul>
     </div>
 
     
