@@ -1,0 +1,42 @@
+<html>
+
+
+<head>
+    <link href="bower_components/angular/angular-csp.css" />
+    <link href="bower_components/angular/styles.css" />
+    <script src="bower_components/angular/angular.js"></script>
+</head>
+
+
+<body>
+
+<div class="app" ng-app="interviewExercise" ng-controller="genericController" data-context="I'm the guy from the outside">
+    <div>
+        <h1>I am the main set of items</h1>
+
+        <a href="#">When you click me, the function <strong>loadData within Controller.js</strong> needs to get called, and the results populated below</a>
+
+        <ul>
+            <li ng-if="items.length" ng-repeat="item in items">Put firstName and lastName here</li>
+        </ul>
+    </div>
+
+
+    <!-- Same controller, but own scope -->
+    <div ng-controller="genericController" data-context="I am inside, nested deep deep within">
+        <h2>I'm a 2nd instance of the controller</h2>
+
+        <a href="#">When you click me, the function <strong>loadData within Controller.js</strong> needs to get called, and the results populated below</a>
+
+        <li ng-if="items.length" ng-repeat="item in items">Put firstName and lastName here</li>
+    </div>
+</div>
+
+</body>
+
+
+<script src="app.js"></script>
+<script src="Controller.js"></script>
+
+
+</html>
