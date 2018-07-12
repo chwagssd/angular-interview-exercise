@@ -5,7 +5,8 @@ Please clone this repo into your Github.com account, and then when you are done 
 
 ## Project Setup
 
-1. Make sure you have NodeJS installed, [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+1. Make sure you have NodeJS installed, [https://nodejs.org/en/download/](https://nodejs.org/en/download/) and then install the dependencies from within the directory
+   - `npm install` <-- from within this repo directory on your computer
 2. Install Bower
    - `npm install -g bower`
 3. Get Angular and the other libraries added locally
