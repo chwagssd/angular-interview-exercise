@@ -1,0 +1,22 @@
+{
+  "name": "angular-interview-exercise",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "http-server -c-1 -p 8081 ./ -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chwagssd/angular-interview-exercise.git"
+  },
+  "author": "Chad Wagner",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/chwagssd/angular-interview-exercise/issues"
+  },
+  "homepage": "https://github.com/chwagssd/angular-interview-exercise#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

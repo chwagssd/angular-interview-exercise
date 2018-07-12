@@ -1,0 +1,20 @@
+[
+  {
+    "firstName": "Mike",
+    "lastName": "Myers"
+  },
+
+  {
+    "firstName": "Leslie",
+    "lastName": "Time"
+  },
+
+  {
+    "firstName": "Frank",
+    "lastName": "Sorrenson"
+  },
+
+  {
+    "a": "Malformed record with no firstName or lastName"
+  }
+]
