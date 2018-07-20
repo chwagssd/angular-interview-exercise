@@ -16,11 +16,14 @@
 
         url: null,
 
-        init: function ($scope, $attrs) {
+        init: function ($scope, $attrs, $http) {
             this.$scope = $scope;
 
             console.log("I'm attached as the controller to: " + $attrs.context);
-            //$scope.items = [{"firstName": "No Names yet! " + Math.random()}];
+            // $scope.items = [{"firstName": "No Names yet! " + Math.random()}];
+
+            this.$scope.loadData = this.loadData.bind(this);
+            this.$http = $http;
         },
 
 
@@ -28,7 +31,7 @@
          * Load the data
          */
         loadData: function () {
-
+            this.$http.get('items.json').then( this.onData.bind(this));
         },
 
         /**
@@ -36,12 +39,18 @@
          * @param response
          */
         onData: function (response) {
-
-
+            if (response.status != 200) {
+                this.memoryCleanup();
+                return;
+            }
+            
+            this.$scope.items = response.data.filter(function(i){
+                return !!i.firstName && !!i.lastName
+            });
         },
 
         memoryCleanup: function(){
-
+            this.$scope.items = [];
         }
 
 
